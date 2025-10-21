@@ -1,7 +1,8 @@
 # Contributors
+<pre>
 Timothy Sullivan
-Boby Lin
-
+Bobby Lin
+<pre>
 # Project Layout
 <pre> 
 CPU_Simulator/
