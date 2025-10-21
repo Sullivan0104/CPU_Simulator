@@ -2,7 +2,7 @@
 <pre>
 Timothy Sullivan
 Bobby Lin
-<pre>
+</pre>
 # Project Layout
 <pre> 
 CPU_Simulator/
