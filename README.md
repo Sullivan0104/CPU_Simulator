@@ -3,6 +3,7 @@ Timothy Sullivan
 Boby Lin
 
 # Project Layout
+<pre>''' 
 CPU_Simulator/
 .
 ├── app
@@ -16,4 +17,4 @@ CPU_Simulator/
 │   ├── cpu
 │   ├── mvc
 │   └── view
-└── tests
+└── tests'''</pre>
