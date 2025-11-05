@@ -6,17 +6,27 @@ Bobby Lin
 # Project Layout
 <pre> 
 CPU_Simulator/
-.
-├── app
-├── controller
-├── include
-│   ├── cpu
-│   ├── mvc
-│   └── view
-├── README.md
-├── src
-│   ├── cpu
-│   ├── mvc
-│   └── view
-└── tests
+└── CPU_Simulator
+    ├── README.md
+    └── src
+        ├── controller
+        │   ├── controller.cpp
+        │   └── controller.hpp
+        ├── cpusim
+        ├── main.cpp
+        ├── model
+        │   ├── alu.cpp
+        │   ├── alu.hpp
+        │   ├── cpuModel.cpp
+        │   ├── cpuModel.hpp
+        │   ├── memory.cpp
+        │   ├── memory.hpp
+        │   ├── registers.cpp
+        │   ├── registers.hpp
+        │   └── subject.hpp
+        |
+        └── view
+            ├── textView.cpp
+            └── textView.hpp
+
 </pre>
