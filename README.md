@@ -5,14 +5,13 @@ Bobby Lin
 </pre>
 # Project Layout
 <pre> 
-CPU_Simulator/
+.
 └── CPU_Simulator
     ├── README.md
     └── src
         ├── controller
         │   ├── controller.cpp
         │   └── controller.hpp
-        ├── cpusim
         ├── main.cpp
         ├── model
         │   ├── alu.cpp
@@ -24,9 +23,9 @@ CPU_Simulator/
         │   ├── registers.cpp
         │   ├── registers.hpp
         │   └── subject.hpp
-        |
         └── view
             ├── textView.cpp
             └── textView.hpp
+
 
 </pre>
