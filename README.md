@@ -34,6 +34,10 @@ Complies the program. Creates cpu_sim in root directory.
 <pre>
 make all
 </pre>
+To run:
+<pre>
+./cpu_sim <input.dat> <run|step>
+</pre>
 # Cleaning
 Removes object files (.o) and the executable (cpu_sim). 
 <pre>
