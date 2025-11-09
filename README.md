@@ -36,7 +36,7 @@ make all
 </pre>
 To run:
 <pre>
-./cpu_sim <input.dat> <run|step>
+./cpu_sim input.dat run|step
 </pre>
 # Cleaning
 Removes object files (.o) and the executable (cpu_sim). 
