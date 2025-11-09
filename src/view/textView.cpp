@@ -13,8 +13,9 @@ void TextView::update()
     cout<<"--- Memory ---\n"<<model.memorySnippet(0,4);
     cout<<"Cycles:"<<model.cycles<<" MemR:"<<model.memReads<<" MemW:"<<model.memWrites<<"\n";
     cout<<"ALU ops:\n";
-    for(auto&p:model.getALU().stats()) cout<<"  "<<p.first<<": "<<p.second<<"\n";
+    for(auto&p:model.getALU().getStats()) cout<<"  "<<p.first<<": "<<p.second<<"\n";
     cout<<"Instr counts:\n";
     for(auto&p:model.instrCounts) cout<<"  "<<p.first<<": "<<p.second<<"\n";
     cout<<"====================\n";
 }
+

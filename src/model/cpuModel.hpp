@@ -7,28 +7,43 @@
 #include "memory.hpp"
 #include "alu.hpp"
 
-class CPUModel : public Subject {
+class CPUModel : public Subject
+{
 public:
     CPUModel();
+    
+    // Load binary memory image
     bool loadMemoryImage(const std::string& filename);
-    bool step();           // execute one instruction
+    
+    // Execute one instruction, return false if error/halt
+    bool step();
+    
+    // Check if CPU is halted
     bool halted() const { return halt; }
-
-    // info for views
+    
+    // State inspection methods
     std::string registerSnapshot() const;
-    std::string memorySnippet(uint32_t start=0,uint32_t words=8) const;
-
-    // stats (public for simplicity)
-    uint32_t PC=0;
-    uint64_t cycles=0;
-    uint32_t memReads=0, memWrites=0;
-    std::unordered_map<std::string,uint32_t> instrCounts;
-
+    std::string memorySnippet(uint32_t start, uint32_t words) const;
     const ALU& getALU() const { return alu; }
+    
+    // Public statistics
+    uint32_t PC;
+    int cycles;
+    int memReads;
+    int memWrites;
+    std::unordered_map<std::string, int> instrCounts;
+    
 private:
     Registers regs;
     Memory mem;
     ALU alu;
-    bool halt=false;
-    uint32_t programBound=0;
+    bool halt;
+    
+    // Fetch instruction from memory
+    uint32_t fetch();
+    
+    // Execute different instruction types
+    void executeRType(uint32_t instr);
+    void executeIType(uint32_t instr, uint8_t opcode);
+    void executeJType(uint32_t instr);
 };

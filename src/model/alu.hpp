@@ -1,17 +1,19 @@
 #pragma once
 #include <unordered_map>
 #include <string>
-#include <cstdint>
 
 class ALU {
 public:
     ALU();
-    int32_t add(int32_t a, int32_t b);
-    int32_t sub(int32_t a, int32_t b);
-    int32_t band(int32_t a, int32_t b);
-    int32_t bor(int32_t a, int32_t b);
-    int32_t slt(int32_t a, int32_t b);
-    const std::unordered_map<std::string, uint32_t>& stats() const;
+
+    int add(int a, int b);
+    int sub(int a, int b);
+    int _and(int a, int b);
+    int _or(int a, int b);
+    int slt(int a, int b);
+
+    const std::unordered_map<std::string, int>& getStats() const;
+
 private:
-    std::unordered_map<std::string, uint32_t> opCounts;
+    std::unordered_map<std::string, int> stats;
 };

@@ -11,7 +11,9 @@ public:
 class Subject 
 {
     std::vector<Observer*> observers;
+
 public:
+
     void attach(Observer* obs) { observers.push_back(obs); }
 protected:
     void notify() 

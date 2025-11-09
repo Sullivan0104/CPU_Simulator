@@ -11,6 +11,7 @@ public:
     bool writeWord(uint32_t addr, uint32_t value);
     void ensureSize(uint32_t bytes);
     uint32_t size() const;
+    
 private:
     std::vector<uint8_t> mem;
 };
