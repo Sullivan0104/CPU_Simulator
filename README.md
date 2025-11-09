@@ -29,3 +29,14 @@ Bobby Lin
 
 
 </pre>
+# How to Build and Run
+Complies the program. Creates cpu_sim in root directory.
+<pre>
+make all
+</pre>
+# Cleaning
+Removes object files (.o) and the executable (cpu_sim). 
+<pre>
+make clean
+</pre>
+
