@@ -7,7 +7,6 @@ using namespace std;
 
 CPUModel::CPUModel() : PC(0), cycles(0), memReads(0), memWrites(0), halt(false) 
 {
-    // Initialize instruction counters
     instrCounts = {
         {"add", 0}, {"sub", 0}, {"and", 0}, {"or", 0}, {"slt", 0},
         {"lw", 0}, {"sw", 0}, {"beq", 0}, {"addi", 0}, {"j", 0}
@@ -112,7 +111,7 @@ void CPUModel::executeIType(uint32_t instr, uint8_t opcode)
 {
     int rs = (instr >> 21) & 0x1F;
     int rt = (instr >> 16) & 0x1F;
-    int16_t imm = instr & 0xFFFF; // Sign-extended immediate
+    int16_t imm = instr & 0xFFFF;
     
     int32_t rsVal = regs.read(rs);
     
@@ -157,10 +156,10 @@ void CPUModel::executeIType(uint32_t instr, uint8_t opcode)
         case 0x04: // beq
         {
             int32_t rtVal = regs.read(rt);
-            int32_t cmp = alu.sub(rsVal, rtVal); // ALU sub operation for comparison
+            int32_t cmp = alu.sub(rsVal, rtVal);
             instrCounts["beq"]++;
             if(cmp == 0) {
-                PC = PC + 4 + (imm << 2); // Branch offset is word-aligned
+                PC = PC + 4 + (imm << 2); 
             } else {
                 PC += 4;
             }
@@ -177,7 +176,6 @@ void CPUModel::executeJType(uint32_t instr)
 {
     uint32_t addr = instr & 0x03FFFFFF;
     
-    // Jump address (word-aligned, keeping upper PC bits)
     PC = (addr  << 2);
     instrCounts["j"]++;
 }
