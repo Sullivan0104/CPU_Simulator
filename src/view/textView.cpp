@@ -17,11 +17,11 @@ void TextView::update()
     cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"; 
     cout<<"\t\tCycles:"<<model.cycles<<" MemR:"<< model.memReads<<" MemW:"<<model.memWrites<<"\n";
     cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"; 
-    cout<<"\t\t\tALU ops:\n";
+    cout<<"\t\t\tALU ops\n";
     cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"; 
     for(auto&p:model.getALU().getStats()) cout<<"  "<<p.first<<":\t"<<p.second<<"\n";
     cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"; 
-    cout<<"\t\t\tInstr counts:\n";
+    cout<<"\t\t\tInstr counts\n";
     cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"; 
     for(auto&p:model.instrCounts) cout<<"  "<<p.first<<":\t"<<p.second<<"\n";
     cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"; 
