@@ -27,6 +27,9 @@ public:
     int memReads;
     int memWrites;
     std::unordered_map<std::string, int> instrCounts;
+
+    std::string decodeInstruction(uint32_t addr) const;
+    std::string memoryWithCurrentPC(uint32_t start, uint32_t words) const;
     
 private:
     Registers regs;

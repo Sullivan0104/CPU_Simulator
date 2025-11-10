@@ -5,16 +5,14 @@
 
 using namespace std;
 
-CPUModel::CPUModel() : PC(0), cycles(0), memReads(0), memWrites(0), halt(false) 
-{
+CPUModel::CPUModel() : PC(0), cycles(0), memReads(0), memWrites(0), halt(false){
     instrCounts = {
         {"add", 0}, {"sub", 0}, {"and", 0}, {"or", 0}, {"slt", 0},
         {"lw", 0}, {"sw", 0}, {"beq", 0}, {"addi", 0}, {"j", 0}
     };
 }
 
-bool CPUModel::loadMemoryImage(const string& filename)
-{
+bool CPUModel::loadMemoryImage(const string& filename){
     if(!mem.loadFromFile(filename)) return false;
     
     mem.ensureSize(1024);
@@ -22,8 +20,7 @@ bool CPUModel::loadMemoryImage(const string& filename)
     return true;
 }
 
-uint32_t CPUModel::fetch()
-{
+uint32_t CPUModel::fetch(){
     uint32_t instr;
     if(!mem.readWord(PC, instr)) {
         cerr << "Fetch error at PC=0x" << hex << PC << dec << "\n";
@@ -34,8 +31,7 @@ uint32_t CPUModel::fetch()
     return instr;
 }
 
-bool CPUModel::step()
-{
+bool CPUModel::step(){
     if(halt) return false;
     
     uint32_t instr = fetch();
@@ -44,7 +40,7 @@ bool CPUModel::step()
     uint8_t opcode = (instr >> 26) & 0x3F;
     
     
-    //notify();
+    notify();
     
     if(opcode == 0x00) {
         executeRType(instr);
@@ -56,13 +52,12 @@ bool CPUModel::step()
     
     cycles++;
 
-    notify();
+    //notify();
 
     return !halt;
 }
 
-void CPUModel::executeRType(uint32_t instr)
-{
+void CPUModel::executeRType(uint32_t instr){
     uint8_t funct = instr & 0x3F;
     int rs = (instr >> 21) & 0x1F;
     int rt = (instr >> 16) & 0x1F;
@@ -107,8 +102,7 @@ void CPUModel::executeRType(uint32_t instr)
     PC += 4;
 }
 
-void CPUModel::executeIType(uint32_t instr, uint8_t opcode)
-{
+void CPUModel::executeIType(uint32_t instr, uint8_t opcode){
     int rs = (instr >> 21) & 0x1F;
     int rt = (instr >> 16) & 0x1F;
     int16_t imm = instr & 0xFFFF;
@@ -172,22 +166,20 @@ void CPUModel::executeIType(uint32_t instr, uint8_t opcode)
     }
 }
 
-void CPUModel::executeJType(uint32_t instr)
-{
+void CPUModel::executeJType(uint32_t instr){
     uint32_t addr = instr & 0x03FFFFFF;
     
     PC = (addr  << 2);
     instrCounts["j"]++;
 }
 
-std::string CPUModel::registerSnapshot() const
-{
+std::string CPUModel::registerSnapshot() const{
     std::ostringstream oss;
     for(int i = 0; i < 32; i++) {     
-        oss << "$" << std::setw(2) << i << " = ";
+        oss << "┃$" << std::setw(2) << i << " = ";
 
         std::ostringstream value;
-        value << std::setw(7) << regs.read(i);
+        value << std::setw(6) << regs.read(i);
 
         oss << "\033[31m" << value.str() << "\033[0m";
 
@@ -197,16 +189,87 @@ std::string CPUModel::registerSnapshot() const
     return oss.str();
 }
 
-string CPUModel::memorySnippet(uint32_t start, uint32_t words) const
-{
+string CPUModel::memorySnippet(uint32_t start, uint32_t words) const{
     ostringstream oss;
     for(uint32_t i = 0; i < words; i++) {
         uint32_t addr = start + (i * 4);
         uint32_t data;
         if(mem.readWord(addr, data)) {
-            oss << "0x" << hex << setw(8) << setfill('0') << addr 
+            oss << "┃0x" << hex << setw(8) << setfill('0') << addr 
                 << ": 0x" << setw(8) << setfill('0') << data 
                 << dec << "\n";
+        }
+    }
+    return oss.str();
+}
+
+std::string CPUModel::decodeInstruction(uint32_t addr) const{
+    uint32_t instr;
+    if(!mem.readWord(addr, instr)) return "???";
+    
+    uint8_t opcode = (instr >> 26) & 0x3F;
+    uint8_t rs = (instr >> 21) & 0x1F;
+    uint8_t rt = (instr >> 16) & 0x1F;
+    uint8_t rd = (instr >> 11) & 0x1F;
+    uint8_t funct = instr & 0x3F;
+    int16_t imm = instr & 0xFFFF;
+    uint32_t target = instr & 0x03FFFFFF;
+    
+    std::ostringstream oss;
+    
+    if(opcode == 0x00) {
+        // R-type
+        switch(funct) {
+            case 0x20: oss << "add $" << (int)rd << ", $" << (int)rs << ", $" << (int)rt; break;
+            case 0x22: oss << "sub $" << (int)rd << ", $" << (int)rs << ", $" << (int)rt; break;
+            case 0x24: oss << "and $" << (int)rd << ", $" << (int)rs << ", $" << (int)rt; break;
+            case 0x25: oss << "or $" << (int)rd << ", $" << (int)rs << ", $" << (int)rt; break;
+            case 0x2A: oss << "slt $" << (int)rd << ", $" << (int)rs << ", $" << (int)rt; break;
+            default: oss << "unknown R-type"; break;
+        }
+    } else if(opcode == 0x02) {
+        // J-type
+        oss << "j 0x" << std::hex << (target << 2) << std::dec;
+    } else {
+        // I-type
+        switch(opcode) {
+            case 0x08: oss << "addi $" << (int)rt << ", $" << (int)rs << ", " << imm; break;
+            case 0x23: oss << "lw $" << (int)rt << ", " << imm << "($" << (int)rs << ")"; break;
+            case 0x2B: oss << "sw $" << (int)rt << ", " << imm << "($" << (int)rs << ")"; break;
+            case 0x04: oss << "beq $" << (int)rs << ", $" << (int)rt << ", " << imm; break;
+            default: oss << "unknown I-type"; break;
+        }
+    }
+    
+    return oss.str();
+}
+
+std::string CPUModel::memoryWithCurrentPC(uint32_t start, uint32_t words) const
+{
+    std::ostringstream oss;
+    for(uint32_t i = 0; i < words; i++) {
+        uint32_t addr = start + (i * 4);
+        uint32_t data;
+        if(mem.readWord(addr, data)) {
+            bool isCurrent = (addr == PC);
+            
+            if(isCurrent) {
+                oss << "\033[1;32m"; 
+                oss << "┃► ";  
+            } else {
+                oss << "┃  ";
+            }
+            
+            oss << "0x" << std::hex << std::setw(8) << std::setfill('0') << addr 
+                << ": 0x" << std::setw(8) << std::setfill('0') << data << std::dec;
+            
+            oss << "  " << decodeInstruction(addr);
+            
+            if(isCurrent) {
+                oss << "\033[0m"; 
+            }
+            
+            oss << "\n";
         }
     }
     return oss.str();
