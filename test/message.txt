@@ -1,0 +1,1020 @@
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 6
+ALU Operations: 6
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 6
+PC: 28
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 0
+R16: 0
+R17: 0
+R18: 0
+R19: 0
+R20: 0
+R21: 0
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 7
+ALU Operations: 7
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 7
+PC: 32
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 0
+R17: 0
+R18: 0
+R19: 0
+R20: 0
+R21: 0
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 8
+ALU Operations: 8
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 8
+PC: 36
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 0
+R18: 0
+R19: 0
+R20: 0
+R21: 0
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 9
+ALU Operations: 9
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 9
+PC: 40
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 0
+R19: 0
+R20: 0
+R21: 0
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 10
+ALU Operations: 10
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 10
+PC: 44
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 0
+R20: 0
+R21: 0
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 11
+ALU Operations: 11
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 11
+PC: 48
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 0
+R21: 0
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 12
+ALU Operations: 12
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 12
+PC: 52
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 0
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 13
+ALU Operations: 13
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 13
+PC: 56
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 0
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 14
+ALU Operations: 14
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 14
+PC: 60
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 0
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 15
+ALU Operations: 15
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 15
+PC: 64
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 0
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 16
+ALU Operations: 16
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 16
+PC: 68
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 100
+R5: 0
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 17
+ALU Operations: 17
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 17
+PC: 72
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 100
+R5: 200
+R6: 0
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 18
+ALU Operations: 18
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 18
+PC: 76
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 100
+R5: 200
+R6: 300
+R7: 0
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 19
+ALU Operations: 19
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 19
+PC: 80
+Registers:
+R0: 0
+R1: 0
+R2: 0
+R3: 0
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 20
+ALU Operations: 20
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 20
+PC: 84
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 0
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 21
+ALU Operations: 21
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 21
+PC: 88
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 0
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 22
+ALU Operations: 22
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 22
+PC: 92
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 0
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 23
+ALU Operations: 23
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 23
+PC: 96
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 0
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 24
+ALU Operations: 24
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 24
+PC: 100
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 4096
+R29: 0
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 25
+ALU Operations: 25
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 25
+PC: 104
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 4096
+R29: 8192
+R30: 0
+R31: 0
+CPU Stats:
+Cycles: 26
+ALU Operations: 26
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 26
+PC: 108
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 4096
+R29: 8192
+R30: 12288
+R31: 0
+CPU Stats:
+Cycles: 27
+ALU Operations: 27
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 27
+PC: 112
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 4096
+R29: 8192
+R30: 12288
+R31: 16384
+CPU Stats:
+Cycles: 28
+ALU Operations: 28
+Memory Reads: 0
+Memory Writes: 0
+Instructions Executed: 28
+PC: 116
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 1
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 4096
+R29: 8192
+R30: 12288
+R31: 16384
+CPU Stats:
+Cycles: 29
+ALU Operations: 28
+Memory Reads: 0
+Memory Writes: 1
+Instructions Executed: 29
+PC: 120
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 3
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 4096
+R29: 8192
+R30: 12288
+R31: 16384
+CPU Stats:
+Cycles: 30
+ALU Operations: 28
+Memory Reads: 1
+Memory Writes: 1
+Instructions Executed: 30
+PC: 124
+Registers:
+R0: 0
+R1: 0
+R2: 300
+R3: 700
+R4: 100
+R5: 200
+R6: 300
+R7: 400
+R8: 3
+R9: 2
+R10: 3
+R11: 4
+R12: 5
+R13: 6
+R14: 7
+R15: 8
+R16: 3
+R17: 7
+R18: 11
+R19: 15
+R20: 4294967292
+R21: 15
+R22: 3
+R23: 1
+R24: 0
+R25: 0
+R26: 4660
+R27: 22136
+R28: 4096
+R29: 8192
+R30: 12288
+R31: 16384
+CPU Stats:
+Cycles: 31
+ALU Operations: 28
+Memory Reads: 1
+Memory Writes: 1
+Instructions Executed: 31
+Execution finished.
+Total cycles: 31
+Instructions executed: 31
+ALU operations: 28
+Memory reads: 1
+Memory writes: 1
+Opcode  0: 10 instructions
+Opcode  2: 1 instructions
+Opcode  8: 18 instructions
+Opcode 35: 1 instructions
+Opcode 43: 1 instructions

@@ -3,8 +3,7 @@
 #include <cstdint>
 #include <string>
 
-class Memory 
-{
+class Memory {
 public:
     bool loadFromFile(const std::string& filename);
     bool readWord(uint32_t addr, uint32_t &out) const;

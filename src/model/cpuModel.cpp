@@ -178,19 +178,23 @@ void CPUModel::executeJType(uint32_t instr)
     uint32_t addr = instr & 0x03FFFFFF;
     
     // Jump address (word-aligned, keeping upper PC bits)
-    PC = (PC & 0xF0000000) | (addr << 2);
+    PC = (addr  << 2);
     instrCounts["j"]++;
 }
 
-string CPUModel::registerSnapshot() const
+std::string CPUModel::registerSnapshot() const
 {
-    ostringstream oss;
-    for(int i = 0; i < 32; i++) {
-        oss << "$" << i << "=0x" 
-            << hex << setw(8) << setfill('0') 
-            << static_cast<uint32_t>(regs.read(i)) << dec;
-        if((i + 1) % 4 == 0) oss << "\n";
-        else oss << "  ";
+    std::ostringstream oss;
+    for(int i = 0; i < 32; i++) {     
+        oss << "$" << std::setw(2) << i << " = ";
+
+        std::ostringstream value;
+        value << std::setw(7) << regs.read(i);
+
+        oss << "\033[31m" << value.str() << "\033[0m";
+
+        if ((i + 1) % 4 == 0) oss << "\n";
+        else oss << "  "; 
     }
     return oss.str();
 }

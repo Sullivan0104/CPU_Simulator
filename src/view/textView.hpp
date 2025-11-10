@@ -8,6 +8,8 @@ class TextView : public Observer
 public:
     explicit TextView(CPUModel& model);
     void update() override;
+
 private:
     CPUModel& model;
+    
 };
