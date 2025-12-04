@@ -46,6 +46,9 @@ Removes object files (.o) and the executable (cpu_sim).
 make clean
 </pre>
 
+# Showcase
+<img width="1277" height="1240" alt="cpu_sim" src="https://github.com/user-attachments/assets/b72108ac-5546-4c56-b5cb-ea0be884bb2e" />
+
 
 Summary
 
